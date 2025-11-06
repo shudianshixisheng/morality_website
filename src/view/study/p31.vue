@@ -5,7 +5,7 @@
 <template>
     <div class="container">
         <div class="title">
-            <h2>Study3: Universal structure of morality across histories</h2>
+            <h2>SIS model can be replicated in ancient times</h2>
         </div>
         <div class="m">
             <img :src="'./assets/image/2025100105.png'" alt="" srcset="">
@@ -30,6 +30,10 @@
 .title {
     grid-column: 1 / 13;
     text-align: center;
+}
+
+.title h2 {
+    font-weight: bold;
 }
 .m {
     grid-column: 1 / 13;
