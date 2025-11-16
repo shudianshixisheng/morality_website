@@ -87,4 +87,63 @@ const showDrawer2 = ref(false);
 img {
     width: 100%;
 }
+
+/* 移动端适配 */
+@media (max-width: 600px) {
+    .container {
+        grid-column-gap: 20px;
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .title {
+        grid-column: 1 / 13;
+    }
+
+    .title h2 {
+        font-size: 18px;
+        line-height: 1.4em;
+        margin: 15px 0;
+    }
+
+    .a {
+        grid-column: 1 / 13;
+        margin-bottom: 20px;
+    }
+
+    .b {
+        grid-column: 1 / 13;
+    }
+
+    .a p {
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+
+    .b img {
+        max-height: none;
+        margin-top: 15px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .b-box .el-button {
+        min-width: 150px;
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+
+    .b-box .el-button:first-child {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .b-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
 </style>

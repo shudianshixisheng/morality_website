@@ -3,9 +3,9 @@
 </script>
 
 <template>
-    <div class="container">
+    <div id="study1" class="container">
         <div class="title">
-            <h1>Human use the SIS model to navigate the moral space.</h1>
+            <h1>Humans use the SIS model to navigate the moral space.</h1>
         </div>
         <div class="a">
             <img :src="'./assets/image/2025100731new.png'" alt="" srcset="">
@@ -14,6 +14,10 @@
 </template>
 
 <style lang="css" scoped>
+#study1 {
+    scroll-margin-top: 80px; /* 为滚动留出顶部空间 */
+}
+
 .container {
     display: grid;
     max-width: 1200px;
@@ -35,4 +39,24 @@
 .a img {
     width: 85%;
 }
+
+/* 移动端适配 */
+@media (max-width: 600px) {
+    .container {
+        grid-column-gap: 5px;
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .title h1 {
+        font-size: 18px;
+        line-height: 1.4em;
+        margin: 15px 0;
+    }
+
+    .a img {
+        width: 100%;
+    }
+}
 </style>
+

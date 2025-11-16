@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="container">
+    <div id="study3" class="container">
         <div class="title">
             <h2>Study3: Universal structure of morality across histories</h2>
         </div>
@@ -43,5 +43,30 @@
 
 img {
     width: 100%;
+}
+
+/* 移动端适配 */
+@media (max-width: 600px) {
+    .container {
+        grid-column-gap: 5px;
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .title h2 {
+        font-size: 18px;
+        line-height: 1.4em;
+        margin: 15px 0;
+    }
+
+    .m {
+        font-size: 14px;
+        line-height: 1.6em;
+    }
+
+    .m p {
+        font-size: 14px;
+        line-height: 1.6em;
+    }
 }
 </style>

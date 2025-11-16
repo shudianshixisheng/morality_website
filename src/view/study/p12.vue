@@ -38,4 +38,23 @@
     width: 100%;
     margin: 15px 0;
 }
+
+/* 移动端适配 */
+@media (max-width: 600px) {
+    .container {
+        grid-column-gap: 5px;
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .title h1 {
+        font-size: 18px;
+        line-height: 1.4em;
+        margin: 15px 0;
+    }
+
+    .a img {
+        margin: 10px 0;
+    }
+}
 </style>

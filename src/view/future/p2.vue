@@ -10,7 +10,7 @@
             </div>
             <div class="left">
                 <p>Besides Ancient China, we plan to <br />
-                    <span style="color: #FF7F50; font-weight: 700;">"revive the mind of Medieval Europe"</span><br />
+                    <span style="color: #FF7F50; font-weight: 700;">revive the mind of Medieval Europe</span><br />
                     using the same method <br />
                     (PLMs & LLMs).</p>
                 <img :src="'./assets/image/2025100719.png'" alt="" srcset="">
@@ -110,4 +110,63 @@ img {
 .i {
     text-indent: -1em;
 }
+
+/* 移动端适配 */
+@media (max-width: 600px) {
+    .container {
+        grid-column-gap: 5px;
+        padding: 0 15px;
+    }
+
+    .title h1 {
+        font-size: 20px;
+        line-height: 1.4em;
+        margin: 15px 0;
+    }
+
+    .left {
+        grid-column: 1 / 13;
+        margin-bottom: 20px;
+    }
+
+    .right {
+        grid-column: 1 / 13;
+    }
+
+    .left p {
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+
+    .left img {
+        width: 100%;
+    }
+
+    .right .tt {
+        font-size: 16px;
+        line-height: 1.4em;
+        margin: 15px 0;
+    }
+
+    .right .tt1 {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .f1 {
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+
+    .f2 {
+        font-size: 12px;
+        line-height: 1.5em;
+    }
+
+    .right ul {
+        padding-left: 20px;
+    }
+}
 </style>
+

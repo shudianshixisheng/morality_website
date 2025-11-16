@@ -6,7 +6,7 @@ const showDrawer = ref(false);
 </script>
 
 <template>
-    <div class="container">
+    <div id="study2" class="container">
         <div class="title">
             <h2>Study2: Universal structure of morality across cultures</h2>
         </div>
@@ -30,6 +30,10 @@ const showDrawer = ref(false);
 </template>
 
 <style lang="css" scoped>
+#study2 {
+    scroll-margin-top: 80px; /* 为滚动留出顶部空间 */
+}
+
 .container {
     display: grid;
     max-width: 1200px;
@@ -60,5 +64,40 @@ const showDrawer = ref(false);
 
 img {
     width: 100%;
+}
+
+/* 移动端适配 */
+@media (max-width: 600px) {
+    .container {
+        grid-column-gap: 20px;
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .title h2 {
+        font-size: 18px;
+        line-height: 1.4em;
+        margin: 15px 0;
+    }
+
+    .left {
+        grid-column: 1 / 13;
+        margin-bottom: 20px;
+    }
+
+    .right {
+        grid-column: 1 / 13;
+    }
+
+    .left h3 {
+        font-size: 16px;
+        line-height: 1.4em;
+    }
+
+    .left p,
+    .right p {
+        font-size: 14px;
+        line-height: 1.5em;
+    }
 }
 </style>

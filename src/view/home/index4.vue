@@ -64,4 +64,85 @@ img {
     width: 100%;
     height: 100%;
 }
+
+/* 手机端响应式样式 */
+@media screen and (max-width: 768px) {
+    .cb {
+        padding: 0 20px;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 100%;
+        width: 100%;
+        padding: 20px 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    
+    .a {
+        font-size: 18px;
+        line-height: 1.6;
+        order: 1;
+    }
+    
+    .a .w {
+        margin-bottom: 10px;
+    }
+    
+    .a .r {
+        text-align: right;
+        font-size: 16px;
+    }
+    
+    .b {
+        order: 2;
+        width: 100%;
+        height: 300px;
+        min-height: 300px;
+    }
+    
+    .c {
+        order: 3;
+        width: 100%;
+    }
+    
+    .d {
+        margin: 30px 0;
+    }
+    
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+/* 针对更小的手机屏幕 */
+@media screen and (max-width: 480px) {
+    .cb {
+        padding: 0 15px;
+    }
+    
+    .container {
+        gap: 15px;
+    }
+    
+    .a {
+        font-size: 16px;
+    }
+    
+    .a .r {
+        font-size: 14px;
+    }
+    
+    .b {
+        height: 250px;
+        min-height: 250px;
+    }
+}
 </style>

@@ -181,4 +181,112 @@ img {
     top: 1003px;
     left: 1196px;
 }
+
+/* 移动端适配 */
+@media (max-width: 600px) {
+    .container {
+        grid-column-gap: 10px;
+        grid-template-rows: auto;
+        padding: 0 15px;
+    }
+
+    .title {
+        grid-column: 1 / 13;
+        grid-row: auto;
+    }
+
+    .title h1 {
+        font-size: 20px !important;
+        line-height: 1.4em !important;
+        margin: 15px 0;
+    }
+
+    .a {
+        grid-column: 1 / 13;
+        grid-row: auto;
+        margin-bottom: 20px;
+    }
+
+    .b {
+        grid-column: 1 / 13;
+        grid-row: auto;
+        margin-bottom: 20px;
+    }
+
+    .c {
+        grid-column: 1 / 13;
+        grid-row: auto;
+        margin-bottom: 10px;
+    }
+
+    .d {
+        grid-column: 1 / 13;
+        grid-row: auto;
+        margin-bottom: 20px;
+    }
+
+    .e {
+        grid-column: 1 / 13;
+        grid-row: auto;
+        margin-bottom: 10px;
+    }
+
+    .f {
+        grid-column: 1 / 13;
+        grid-row: auto;
+        margin-bottom: 20px;
+    }
+
+    .g {
+        grid-column: 1 / 13;
+        grid-row: auto;
+        margin-bottom: 20px;
+    }
+
+    .h {
+        grid-column: 1 / 13;
+        grid-row: auto;
+        margin-bottom: 20px;
+    }
+
+    .i {
+        grid-column: 1 / 13;
+        grid-row: auto;
+        margin-bottom: 20px;
+    }
+
+    .b p, .i p {
+        font-size: 18px;
+    }
+
+    .c p, .e p {
+        font-size: 18px;
+        line-height: 1.4em;
+    }
+
+    .f-t {
+        font-size: 18px;
+        line-height: 1.4em;
+    }
+
+    .f-n {
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+
+    .i-imgs {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .i-img-left {
+        width: 100px;
+        height: auto;
+    }
+
+    .i-img-right {
+        width: 150px;
+        height: auto;
+    }
+}
 </style>

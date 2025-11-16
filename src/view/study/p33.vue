@@ -29,7 +29,7 @@
         <div class="rb">
             <div>
                 <div>
-                    <img :src="'./assets/image/2025100803.png'" alt="" srcset=""></img>
+                    <img :src="'./assets/image/2025100803.png'" alt="" srcset="" />
                 </div>
                 <div class="icon ip2"></div>
                 <div class="s p1">
@@ -149,5 +149,66 @@
 
 img {
     width: 100%;
+}
+
+/* 移动端适配 */
+@media (max-width: 600px) {
+    .container {
+        grid-column-gap: 10px;
+        font-size: 14px;
+        line-height: 1.5em;
+        padding: 0 15px;
+    }
+
+    .title h2 {
+        font-size: 18px;
+        line-height: 1.4em;
+        margin: 15px 0;
+    }
+
+    .lt {
+        grid-column: 1 / 13;
+        margin-bottom: 15px;
+    }
+
+    .rt {
+        grid-column: 1 / 13;
+        margin-bottom: 15px;
+    }
+
+    .lb {
+        grid-column: 1 / 13;
+        margin: 0 0 15px 0;
+    }
+
+    .mb {
+        grid-column: 1 / 13;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .rb {
+        grid-column: 1 / 13;
+    }
+
+    .lt p,
+    .mb p {
+        font-size: 14px;
+        line-height: 1.6em;
+    }
+
+    .mb p:nth-child(1)::before,
+    .mb p:nth-child(2)::before {
+        display: none;
+    }
+
+    .rb .icon {
+        width: 12px;
+        height: 12px;
+    }
+
+    .rb .s {
+        width: 90%;
+    }
 }
 </style>

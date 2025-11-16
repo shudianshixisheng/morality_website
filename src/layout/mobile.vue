@@ -1,5 +1,28 @@
 <script setup lang="ts">
 import { MoreFilled } from '@element-plus/icons-vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+const handleMenuSelect = (index: string) => {
+    // 解析路径和查询参数
+    if (index.includes('?')) {
+        const [path, queryString] = index.split('?');
+        const query: Record<string, string> = {};
+
+        // 解析查询参数
+        if (queryString) {
+            queryString.split('&').forEach(param => {
+                const [key, value] = param.split('=');
+                query[key] = value;
+            });
+        }
+
+        router.push({ path, query });
+    } else {
+        router.push(index);
+    }
+};
 </script>
 
 <template>
@@ -15,23 +38,23 @@ import { MoreFilled } from '@element-plus/icons-vue';
                             <MoreFilled />
                         </el-icon>
                         <template #dropdown>
-                            <el-menu :router="true">
-                                <el-menu-item index="introduction">
+                            <el-menu :router="false" @select="handleMenuSelect">
+                                <el-menu-item index="/introduction">
                                     Introduction
                                 </el-menu-item>
                                 <el-sub-menu index="study">
                                     <template #title>Findings</template>
-                                    <el-menu-item index="study?to=study1">
+                                    <el-menu-item index="/study?to=study1">
                                         Study 1: Model structure
                                     </el-menu-item>
-                                    <el-menu-item index="study?to=study2">
+                                    <el-menu-item index="/study?to=study2">
                                         Study 2: Cultural comparison
                                     </el-menu-item>
-                                    <el-menu-item index="study?to=study3">
+                                    <el-menu-item index="/study?to=study3">
                                         Study 3: Historical evolution
                                     </el-menu-item>
                                 </el-sub-menu>
-                                <el-menu-item index="future">
+                                <el-menu-item index="/future">
                                     Future Plans
                                 </el-menu-item>
                             </el-menu>
@@ -47,8 +70,26 @@ import { MoreFilled } from '@element-plus/icons-vue';
 </template>
 
 <style scoped>
+.el-container {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+:deep(.el-header) {
+    width: 100%;
+    max-width: 100vw;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :deep(.el-main) {
     min-height: calc(100vh - 60px);
+    width: 100%;
+    max-width: 100vw;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .el-menu--horizontal>.el-menu-item:nth-child(1) {

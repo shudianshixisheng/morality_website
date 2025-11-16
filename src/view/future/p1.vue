@@ -92,4 +92,57 @@
     line-height: 32px;
     text-align: left;
 }
+
+/* 移动端适配 */
+@media (max-width: 600px) {
+    .container {
+        grid-column-gap: 5px;
+        padding: 0 15px;
+    }
+
+    .title > h1 {
+        font-size: 20px;
+        line-height: 1.4em;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .b {
+        grid-column: 1 / 13;
+        margin-bottom: 20px;
+    }
+
+    .a {
+        grid-column: 1 / 13;
+        margin-bottom: 20px;
+    }
+
+    .d {
+        grid-column: 1 / 13;
+        margin: 20px 0;
+    }
+
+    .c {
+        grid-column: 1 / 13;
+        margin: 20px 0;
+    }
+
+    .b .title,
+    .c .title {
+        font-size: 18px;
+        line-height: 1.4em;
+        margin-bottom: 10px;
+    }
+
+    .b .desc,
+    .c .desc {
+        font-size: 14px;
+        line-height: 1.6em;
+        padding: 0 !important;
+    }
+
+    .d img {
+        margin-left: 0;
+    }
+}
 </style>

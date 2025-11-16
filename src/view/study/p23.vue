@@ -52,5 +52,37 @@
 img {
     width: 100%;
 }
+
+/* 移动端适配 */
+@media (max-width: 600px) {
+    .container {
+        grid-column-gap: 5px;
+        padding: 0 15px;
+    }
+
+    .h {
+        font-size: 14px !important;
+    }
+
+    .h h2 {
+        font-size: 18px !important;
+        line-height: 1.4em !important;
+        margin: 15px 0;
+    }
+
+    .a {
+        grid-column: 1 / 13;
+        margin-bottom: 15px;
+    }
+
+    .b {
+        grid-column: 1 / 13;
+    }
+
+    .b p {
+        font-size: 14px;
+        line-height: 1.6em;
+    }
+}
 </style>
 
