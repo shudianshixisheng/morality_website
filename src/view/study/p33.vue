@@ -29,7 +29,7 @@
         <div class="rb">
             <div>
                 <div>
-                    <img :src="'./assets/image/2025100803.png'" alt="" srcset="" />
+                    <img :src="'./assets/image/2025100803new.png'" alt="" srcset="" />
                 </div>
                 <div class="icon ip2"></div>
                 <div class="s p1">

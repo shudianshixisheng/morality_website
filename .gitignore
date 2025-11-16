@@ -26,3 +26,4 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.cursor/rules/必须遵守.mdc
