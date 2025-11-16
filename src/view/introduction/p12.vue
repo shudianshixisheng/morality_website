@@ -21,6 +21,19 @@
             <p>Moral Space</p>
             <img :src="'./assets/image/2025101701.png'" alt="">
         </div>
+        <div class="g">
+            <p class="f-t">
+                Our Data-Driven Approach
+            </p>
+            <p class="f-n">
+                We integrate dozens of existing models <br>
+                to find a shared, core structure. <br>
+                Across Space: We collect data from <br>
+                people all over the globe. <br>
+                Across Time: We examine ancient texts <br>
+                from different civilizations.
+            </p>
+        </div>
         <div class="c">
             <p>
                 Cultural Comparisons
@@ -36,19 +49,6 @@
         </div>
         <div class="f">
             <img :src="'./assets/image/2025101702.png'" alt="">
-        </div>
-        <div class="g">
-            <p class="f-t">
-                Our Data-Driven Approach
-            </p>
-            <p class="f-n">
-                We integrate dozens of existing models <br>
-                to find a shared, core structure. <br>
-                Across Space: We collect data from <br>
-                people all over the globe. <br>
-                Across Time: We examine ancient texts <br>
-                from different civilizations.
-            </p>
         </div>
         <div class="h">
             <p class="f-t">
@@ -211,6 +211,12 @@ img {
         grid-column: 1 / 13;
         grid-row: auto;
         margin-bottom: 20px;
+    }
+
+    .b img {
+        width: 60%;
+        margin: 0 auto;
+        display: block;
     }
 
     .c {

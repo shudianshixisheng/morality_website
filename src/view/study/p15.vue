@@ -95,11 +95,13 @@ img {
 
     .e {
         grid-column: 1 / 13;
+        grid-row: auto;
         margin-bottom: 15px;
     }
 
     .f {
         grid-column: 1 / 13;
+        grid-row: auto;
     }
 
     .f p {

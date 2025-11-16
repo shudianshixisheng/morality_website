@@ -15,13 +15,13 @@
             <div class="a">
                 <img :src="'./assets/image/2025102104.png'" alt="" srcset="">
             </div>
-            <div class="d">
-                <img :src="'./assets/image/2025102105.png'" alt="">
-            </div>
             <div class="c">
                 <p class="title">Underlying Mechanisms<br />for Regional Differences</p>
                 <p class="desc">To explain differences in moral conceptual space across regions, we draw on variables
                     from a multinational database covering cultural, economic, and ecological domains.</p>
+            </div>
+            <div class="d">
+                <img :src="'./assets/image/2025102105.png'" alt="">
             </div>
         </div>
     </div>

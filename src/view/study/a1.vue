@@ -74,4 +74,52 @@ h3 {
 img {
     width: 100%;
 }
+
+/* 移动端适配 */
+@media (max-width: 600px) {
+    .container {
+        grid-column-gap: 5px;
+        padding: 0 15px;
+    }
+
+    .lt {
+        grid-column: 1 / 13;
+        margin-bottom: 15px;
+    }
+
+    .rt {
+        grid-column: 1 / 13;
+        margin-bottom: 15px;
+    }
+
+    .lb {
+        grid-column: 1 / 13;
+        margin-bottom: 15px;
+    }
+
+    .rb {
+        grid-column: 1 / 13;
+        margin-bottom: 15px;
+    }
+
+    .bb {
+        grid-column: 1 / 13;
+    }
+
+    h3 {
+        font-size: 16px;
+        line-height: 1.4em;
+        margin: 10px 0;
+    }
+
+    .w {
+        font-size: 14px;
+        line-height: 1.6em;
+    }
+
+    .desc {
+        font-size: 12px;
+        line-height: 1.5em;
+    }
+}
 </style>

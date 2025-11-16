@@ -58,4 +58,47 @@
 img {
     width: 100%;
 }
+
+/* 移动端适配 */
+@media (max-width: 600px) {
+    .container {
+        grid-column-gap: 5px;
+        padding: 0 15px;
+    }
+
+    .title {
+        grid-column: 1 / 13;
+        margin-bottom: 15px;
+    }
+
+    .title h2 {
+        font-size: 18px;
+        line-height: 1.4em;
+    }
+
+    .l {
+        grid-column: 1 / 13;
+        margin-bottom: 15px;
+    }
+
+    .r {
+        grid-column: 1 / 13;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        font-size: 16px;
+        line-height: 1.4em;
+        margin: 10px 0;
+    }
+
+    .w {
+        font-size: 14px;
+        line-height: 1.6em;
+    }
+
+    .w span {
+        font-size: 16px;
+    }
+}
 </style>

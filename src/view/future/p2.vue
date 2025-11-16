@@ -149,9 +149,10 @@ img {
     }
 
     .right .tt1 {
-        display: block;
-        width: 100%;
-        margin: 10px 0;
+        display: inline-block;
+        width: 48%;
+        margin: 10px 1%;
+        vertical-align: top;
     }
 
     .f1 {
