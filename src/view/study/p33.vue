@@ -132,13 +132,16 @@
     background-color: red;
     border-radius: 50%;
 }
-.rb .icon.ip1 {
-    bottom: 48%;
-    left: 62.5%;
-}
-.rb .icon.ip2 {
-    bottom: 26%;
-    left: 43%;
+/* PC端样式 */
+@media (min-width: 601px) {
+    .rb .icon.ip1 {
+        bottom: 48%;
+        left: 60.5%;
+    }
+    .rb .icon.ip2 {
+        bottom: 26%;
+        left: 40%;
+    }
 }
 .ip1:hover +.p2 {
     visibility: visible;
@@ -212,10 +215,12 @@ img {
     }
 
     .rb .icon.ip1 {
+        bottom: 48%;
         left: 61%;
     }
 
     .rb .icon.ip2 {
+        bottom: 26%;
         left: 40%;
     }
 }

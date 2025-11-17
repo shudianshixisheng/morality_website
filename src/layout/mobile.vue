@@ -33,6 +33,7 @@ const handleMenuSelect = (index: string) => {
                     Mapping Human Morality
                 </el-menu-item>
                 <el-menu-item>
+                    <span class="explore-text">Explore details</span>
                     <el-dropdown placement="bottom-end" trigger="click">
                         <el-icon size="33">
                             <MoreFilled />
@@ -94,5 +95,12 @@ const handleMenuSelect = (index: string) => {
 
 .el-menu--horizontal>.el-menu-item:nth-child(1) {
     margin-right: auto;
+}
+
+.explore-text {
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 14px;
+    color: inherit;
 }
 </style>
