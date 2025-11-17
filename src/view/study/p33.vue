@@ -29,7 +29,7 @@
         <div class="rb">
             <div>
                 <div>
-                    <img :src="'./assets/image/2025100803new.png'" alt="" srcset="" />
+                    <img :src="'./assets/image/2025100803new1.png'" alt="" srcset="" />
                 </div>
                 <div class="icon ip2"></div>
                 <div class="s p1">
@@ -209,6 +209,14 @@ img {
 
     .rb .s {
         width: 90%;
+    }
+
+    .rb .icon.ip1 {
+        left: 61%;
+    }
+
+    .rb .icon.ip2 {
+        left: 40%;
     }
 }
 </style>
