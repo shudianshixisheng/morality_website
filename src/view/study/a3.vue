@@ -17,7 +17,6 @@ import LazyImage from '../../components/LazyImage.vue';
             <LazyImage :src="'./assets/image/2025100814.png'" alt=""></LazyImage>
         </div>
         <div class="r">
-            <LazyImage :src="'./assets/image/2025100811.png'" alt="" className="pc-img-2025100811"></LazyImage>
             <LazyImage :src="'./assets/image/2025100812.png'" alt=""></LazyImage>
         </div>
     </div>
@@ -110,10 +109,6 @@ import LazyImage from '../../components/LazyImage.vue';
     /* 移动端：显示移动端的图片，隐藏PC端的原图 */
     .mobile-img-2025100811 {
         display: block;
-    }
-
-    .pc-img-2025100811 {
-        display: none;
     }
 }
 </style>
