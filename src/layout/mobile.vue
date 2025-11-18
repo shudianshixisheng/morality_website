@@ -103,4 +103,31 @@ const handleMenuSelect = (index: string) => {
     font-size: 14px;
     color: inherit;
 }
+
+/* 确保 dropdown 在手机端始终可见 */
+:deep(.el-dropdown) {
+    display: inline-flex !important;
+    align-items: center;
+    vertical-align: middle;
+}
+
+:deep(.el-dropdown .el-icon) {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* 确保下拉菜单弹出层有足够高的 z-index */
+:deep(.el-popper) {
+    z-index: 9999 !important;
+}
+
+/* 确保菜单项在小屏幕上完全可见 */
+:deep(.el-menu-item) {
+    min-height: 56px;
+    line-height: 56px;
+    padding: 0 20px;
+    white-space: nowrap;
+}
 </style>

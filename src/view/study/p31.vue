@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import LazyImage from '../../components/LazyImage.vue';
 </script>
 
 <template>
@@ -8,7 +8,7 @@
             <h2>Study3: Universal structure of morality across histories</h2>
         </div>
         <div class="m">
-            <img :src="'./assets/image/2025100105.png'" alt="" srcset="">
+            <LazyImage :src="'./assets/image/2025100105.png'" alt=""></LazyImage>
             <p>How do we know if our modern ideas of "good" and "evil" are the same as those held by people centuries ago?</p>
             <p>
                 We developed a context-referent labeling (CRL) approach. Instead of simulating ancient human raters, we instructed LLMs to evaluate actions based explicitly on historical context. Each action was rated using descriptive texts provided for reference.
@@ -41,7 +41,7 @@
     line-height: 1.5em;
 }
 
-img {
+:deep(img) {
     width: 100%;
 }
 

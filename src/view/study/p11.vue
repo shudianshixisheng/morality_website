@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import LazyImage from '../../components/LazyImage.vue';
 </script>
 
 <template>
@@ -8,7 +8,7 @@
             <h1>Humans use the SIS model to navigate the moral space.</h1>
         </div>
         <div class="a">
-            <img :src="'./assets/image/2025100731new.png'" alt="" srcset="">
+            <LazyImage :src="'./assets/image/2025100731new.png'" alt=""></LazyImage>
         </div>
     </div>
 </template>
@@ -36,7 +36,7 @@
 .title h1 {
     font-weight: bold;
 }
-.a img {
+.a :deep(img) {
     width: 85%;
 }
 
@@ -54,7 +54,7 @@
         margin: 15px 0;
     }
 
-    .a img {
+    .a :deep(img) {
         width: 100%;
     }
 }

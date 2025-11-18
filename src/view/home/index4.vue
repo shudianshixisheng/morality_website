@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import layout from "../../layout/default.vue";
 import StarNew from "./components/StarNew.vue";
+import LazyImage from "../../components/LazyImage.vue";
 </script>
 
 <template>
@@ -8,14 +9,14 @@ import StarNew from "./components/StarNew.vue";
         <div class="cb">
             <div class="container">
                 <div class="a">
-                    <p class="w">“Two things awe me most, the starry sky above me and the moral law within me.”</p>
+                    <p class="w">"Two things awe me most, the starry sky above me and the moral law within me."</p>
                     <p class="r">——Kant</p>
                 </div>
                 <div class="b">
                     <StarNew></StarNew>
                 </div>
                 <div class="c">
-                    <img :src="'./assets/image/2025101501.png'" alt="" srcset="">
+                    <LazyImage :src="'./assets/image/2025101501.png'" alt=""></LazyImage>
                 </div>
             </div>
         </div>
@@ -60,7 +61,7 @@ import StarNew from "./components/StarNew.vue";
     text-align: right;
 }
 
-img {
+:deep(img) {
     width: 100%;
     height: 100%;
 }
@@ -115,7 +116,7 @@ img {
         margin: 30px 0;
     }
     
-    img {
+    :deep(img) {
         width: 100%;
         height: auto;
         object-fit: contain;

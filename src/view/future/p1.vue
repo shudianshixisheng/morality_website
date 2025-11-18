@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import LazyImage from '../../components/LazyImage.vue';
 </script>
 
 <template>
@@ -10,10 +10,10 @@
             </div>
             <div class="b">
                 <p class="title">18 Global Countries (n = 10,800)</p>
-                <p class="desc" style="padding: 0px 85px 0px 52px;">We plan to collect data from participants in 18 culturally diverse countries across five continents and in 11 languages collectively representing more than half of the world’s population.</p>
+                <p class="desc" style="padding: 0px 85px 0px 52px;">We plan to collect data from participants in 18 culturally diverse countries across five continents and in 11 languages collectively representing more than half of the world's population.</p>
             </div>
             <div class="a">
-                <img :src="'./assets/image/2025102104.png'" alt="" srcset="">
+                <LazyImage :src="'./assets/image/2025102104.png'" alt=""></LazyImage>
             </div>
             <div class="c">
                 <p class="title">Underlying Mechanisms<br />for Regional Differences</p>
@@ -21,7 +21,7 @@
                     from a multinational database covering cultural, economic, and ecological domains.</p>
             </div>
             <div class="d">
-                <img :src="'./assets/image/2025102105.png'" alt="">
+                <LazyImage :src="'./assets/image/2025102105.png'" alt=""></LazyImage>
             </div>
         </div>
     </div>
@@ -68,11 +68,11 @@
     margin: 80px 0 0 0;
 }
 
-.a img {
+.a :deep(img) {
     width: 100%;
 }
 
-.d img {
+.d :deep(img) {
     width: 100%;
     margin-left: 50px;
 }
@@ -141,7 +141,7 @@
         padding: 0 !important;
     }
 
-    .d img {
+    .d :deep(img) {
         margin-left: 0;
     }
 }

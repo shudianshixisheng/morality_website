@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import A1 from './a1.vue';
+import LazyImage from '../../components/LazyImage.vue';
 
 const showDrawer = ref(false);
 </script>
@@ -11,7 +12,7 @@ const showDrawer = ref(false);
             <h1>Materials: A comprehensive set of morally relevant features</h1>
         </div>
         <div class="a">
-            <img :src="'./assets/image/2025102103new.png'" alt="" srcset="">
+            <LazyImage :src="'./assets/image/2025102103new.png'" alt=""></LazyImage>
             <div class="more" @click="showDrawer = true">Read more—</div>
         </div>
         <el-drawer v-model="showDrawer"
@@ -45,7 +46,7 @@ const showDrawer = ref(false);
     position: relative;
 }
 
-.a img {
+.a :deep(img) {
     width: 100%;
     margin: 15px 0;
 }
@@ -72,7 +73,7 @@ const showDrawer = ref(false);
         margin: 15px 0;
     }
 
-    .a img {
+    .a :deep(img) {
         margin: 10px 0;
     }
 }

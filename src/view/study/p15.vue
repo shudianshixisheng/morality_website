@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import LazyImage from '../../components/LazyImage.vue';
 </script>
 
 <template>
@@ -8,18 +8,18 @@
             <p>Geometric symmetry between the <span style="color: #C00000;">Evil</span> and <span style="color: #027D33;">Good</span></p>
         </div>
         <div class="a">
-            <img :src="'./assets/image/2025102108new.png'" alt="" srcset="">
+            <LazyImage :src="'./assets/image/2025102108new.png'" alt=""></LazyImage>
         </div>
         <div class="c">
             <p>
-                By identifying several pairs of actions that are highly symmetric—meaning they involve similar situations but opposite moral values—we found that each good action’s score on a moral dimension (like caring for others) was strongly linked to its evil counterpart (like harming others) on the matching dimension, but not on the other axes. 
+                By identifying several pairs of actions that are highly symmetric—meaning they involve similar situations but opposite moral values—we found that each good action's score on a moral dimension (like caring for others) was strongly linked to its evil counterpart (like harming others) on the matching dimension, but not on the other axes. 
             </p>
         </div>
         <div class="t">
             <p>Link between <span style="font-style: italic;">up-stream</span> and <span style="font-style: italic;">down-stream</span></p>
         </div>
         <div class="e">
-            <img :src="'./assets/image/2025102110new.png'" alt="" srcset="">
+            <LazyImage :src="'./assets/image/2025102110new.png'" alt=""></LazyImage>
         </div>
         <div class="f">
             <p>
@@ -64,13 +64,13 @@
     line-height: 1.5em;
 }
 
-img {
+:deep(img) {
     width: 100%;
 }
-.a img {
+.a :deep(img) {
     width: 100%;
 }
-.e img {
+.e :deep(img) {
     width: 100%;
 }
 
