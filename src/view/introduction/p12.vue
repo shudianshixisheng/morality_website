@@ -283,16 +283,25 @@ import LazyImage from '../../components/LazyImage.vue';
     .i-imgs {
         gap: 20px;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 
-    .i-img-left {
-        width: 100px;
-        height: auto;
+    .i-imgs :deep(.lazy-image-wrapper) {
+        width: auto;
+        display: inline-block;
     }
 
-    .i-img-right {
-        width: 150px;
-        height: auto;
+    :deep(.i-img-left) {
+        width: 120px !important;
+        height: auto !important;
+        max-width: 120px;
+    }
+
+    :deep(.i-img-right) {
+        width: 180px !important;
+        height: auto !important;
+        max-width: 180px;
     }
 }
 </style>

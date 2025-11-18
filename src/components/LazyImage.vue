@@ -62,7 +62,7 @@ onMounted(() => {
             @load="handleLoad"
             @error="handleError"
         />
-        <div v-if="isLoading" :class="['loading-text', { 'test-mode': isTestMode }]">图片加载中...</div>
+        <div v-if="isLoading" :class="['loading-text', { 'test-mode': isTestMode }]">loading...</div>
         <div v-if="imageError" :class="['error-text', { 'test-mode': isTestMode }]">图片加载失败</div>
     </div>
 </template>
