@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import LazyImage from '../../components/LazyImage.vue';
 </script>
 
 <template>
@@ -11,7 +11,7 @@
             <p>We hypothesize that human communities <strong>share a common conceptual scaffold</strong> for morality, but locate specific moral actions differently within that scaffold.</p>
         </div>
         <div class="c">
-            <img :src="`./assets/image/2025100714.png`" alt="" srcset="">
+            <LazyImage :src="`./assets/image/2025100714.png`" alt=""></LazyImage>
         </div>
         <div class="d">
             Universality lies in cognitive and computational machinery: all humans share an architecture for organizing and evaluating moral actions. The analogy to language is instructive: just as all humans possess the capacity for language acquisition, so too they share a framework for morality.
@@ -64,7 +64,7 @@
     line-height: 32px;
 }
 
-img {
+:deep(img) {
     width: 100%;
 }
 

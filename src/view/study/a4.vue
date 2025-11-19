@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import LazyImage from '../../components/LazyImage.vue';
 </script>
 
 <template>
@@ -11,7 +11,7 @@
             <p class="w">⭐ PCA loadings on 60 features for evil and good actions in the China.</p>
         </div>
         <div class="b">
-            <img :src="'./assets/image/2025100815.png'" alt="" srcset="">
+            <LazyImage :src="'./assets/image/2025100815.png'" alt=""></LazyImage>
         </div>
     </div>
 </template>
@@ -42,7 +42,7 @@
     line-height: 1.5em;
 }
 
-img {
+:deep(img) {
     width: 100%;
 }
 

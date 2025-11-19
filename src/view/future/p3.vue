@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import LazyImage from '../../components/LazyImage.vue';
 </script>
 
 <template>
@@ -9,7 +9,7 @@
                 <h1>Far-reaching implication</h1>
             </div>
             <div class="img">
-                <img :src="'./assets/image/2025100730.png'" alt="">
+                <LazyImage :src="'./assets/image/2025100730.png'" alt=""></LazyImage>
             </div>
             <div class="desc">
                 <p>Our work holds far-reaching implications—from advancing our understanding of morality's origins in
@@ -47,7 +47,7 @@
     grid-column: 1 / 13;
 }
 
-.img img {
+.img :deep(img) {
     width: 100%;
 }
 

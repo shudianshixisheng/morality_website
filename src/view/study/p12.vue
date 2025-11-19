@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import LazyImage from '../../components/LazyImage.vue';
 </script>
 
 <template>
@@ -8,7 +8,7 @@
             <h1>Materials: A comprehensive sample of moral actions</h1>
         </div>
         <div class="a">
-            <img :src="'./assets/image/2025102102new.png'" alt="" srcset="">
+            <LazyImage :src="'./assets/image/2025102102new.png'" alt=""></LazyImage>
         </div>
     </div>
 </template>
@@ -34,7 +34,7 @@
 .title h1 {
     font-weight: bold;
 }
-.a img {
+.a :deep(img) {
     width: 100%;
     margin: 15px 0;
 }
@@ -53,7 +53,7 @@
         margin: 15px 0;
     }
 
-    .a img {
+    .a :deep(img) {
         margin: 10px 0;
     }
 }

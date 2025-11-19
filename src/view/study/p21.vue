@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import A4 from './a4.vue';
+import LazyImage from '../../components/LazyImage.vue';
 
 const showDrawer = ref(false);
 </script>
@@ -12,12 +13,12 @@ const showDrawer = ref(false);
         </div>
         <div class="left">
             <h3>PCA: USA-China Shared Space & Loadings</h3>
-            <img :src="'./assets/image/2025100101.png'" alt="" srcset="">
+            <LazyImage :src="'./assets/image/2025100101.png'" alt=""></LazyImage>
             <p>The 18 countries from which nationally representative online samples are planned to be recruited. Pilot data were collected from China (n = 2,149)</p>
-            <img :src="'./assets/image/2025100102.png'" alt="" srcset="">
+            <LazyImage :src="'./assets/image/2025100102.png'" alt=""></LazyImage>
         </div>
         <div class="right">
-            <img :src="'./assets/image/2025100103.png'" alt="" srcset="">
+            <LazyImage :src="'./assets/image/2025100103.png'" alt=""></LazyImage>
             <p>High concordance of PCA scores (lower left triangle) and Tucker's congruence of PCA loadings (upper right triangle) indicates a shared conceptual space between the US and China.</p>
             <p style="text-align: right; text-decoration: underline; font-weight: bolder;" @click="showDrawer = true">Read more—</p>
         </div>
@@ -62,7 +63,7 @@ const showDrawer = ref(false);
 
 
 
-img {
+:deep(img) {
     width: 100%;
 }
 

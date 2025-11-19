@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import LazyImage from '../../components/LazyImage.vue';
 </script>
 
 <template>
@@ -13,13 +13,13 @@
                     <span style="color: #FF7F50; font-weight: 700;">revive the mind of Medieval Europe</span><br />
                     using the same method <br />
                     (PLMs & LLMs).</p>
-                <img :src="'./assets/image/2025100719.png'" alt="" srcset="">
+                <LazyImage :src="'./assets/image/2025100719.png'" alt=""></LazyImage>
             </div>
             <div class="right">
                 <p class="tt">How to extract moral actions and their descriptions?</p>
-                <img :src="'./assets/image/2025100720.png'" alt="" srcset="">
+                <LazyImage :src="'./assets/image/2025100720.png'" alt=""></LazyImage>
                 <p class="tt1 f2 s">Philosophy of the Elite <br/>(Summa Confessorum)</p>
-                <p class="tt1 f2 s">Theological works <br/>(The Pilgrim’s Progress)</p>
+                <p class="tt1 f2 s">Theological works <br/>(The Pilgrim's Progress)</p>
                 <p class="tt">How to obtain the representation?</p>
                 <ul>
                     <li>
@@ -81,10 +81,10 @@
     margin: 0;
 }
 
-img {
+:deep(img) {
     width: 100%;
 }
-.left img {
+.left :deep(img) {
     width: 75%;
 }
 
@@ -138,7 +138,7 @@ img {
         line-height: 1.5em;
     }
 
-    .left img {
+    .left :deep(img) {
         width: 100%;
     }
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import LazyImage from '../../components/LazyImage.vue';
 </script>
 
 <template>
@@ -14,10 +14,10 @@
             </p>
         </div>
         <div class="p2">
-            <img :src="'./assets/image/2025100807.png'" alt="" srcset="">
+            <LazyImage :src="'./assets/image/2025100807.png'" alt=""></LazyImage>
         </div>
         <div class="p3">
-            <img :src="'./assets/image/2025100808.png'" alt="" srcset="">
+            <LazyImage :src="'./assets/image/2025100808.png'" alt=""></LazyImage>
         </div>
         <div class="p4">
             <h3>⭐ Method 2: </h3>
@@ -26,10 +26,10 @@
             </p>
         </div>
         <div class="p5">
-            <img :src="'./assets/image/2025100809.png'" alt="" srcset="">
+            <LazyImage :src="'./assets/image/2025100809.png'" alt=""></LazyImage>
         </div>
         <div class="p6">
-            <img :src="'./assets/image/2025100810.png'" alt="" srcset="">
+            <LazyImage :src="'./assets/image/2025100810.png'" alt=""></LazyImage>
         </div>
         <div class="p7">
             <strong>All results revealed that the optimal number of PCA was 3 !!!</strong>
@@ -79,7 +79,7 @@
     line-height: 28px;
 }
 
-img {
+:deep(img) {
     width: 100%;
 }
 

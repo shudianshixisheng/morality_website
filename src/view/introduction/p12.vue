@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import LazyImage from '../../components/LazyImage.vue';
 </script>
 
 <template>
@@ -19,7 +19,7 @@
         </div>
         <div class="b">
             <p>Moral Space</p>
-            <img :src="'./assets/image/2025101701.png'" alt="">
+            <LazyImage :src="'./assets/image/2025101701.png'" alt=""></LazyImage>
         </div>
         <div class="g">
             <p class="f-t">
@@ -40,7 +40,7 @@
             </p>
         </div>
         <div class="d">
-            <img :src="'./assets/image/2025101703.png'" alt="">
+            <LazyImage :src="'./assets/image/2025101703.png'" alt=""></LazyImage>
         </div>
         <div class="e">
             <p>
@@ -48,7 +48,7 @@
             </p>
         </div>
         <div class="f">
-            <img :src="'./assets/image/2025101702.png'" alt="">
+            <LazyImage :src="'./assets/image/2025101702.png'" alt=""></LazyImage>
         </div>
         <div class="h">
             <p class="f-t">
@@ -66,8 +66,8 @@
                 AI Safety
             </p>
             <div class="i-imgs">
-                <img :src="'./assets/image/2025101704_left.png'" alt="" class="i-img-left">
-                <img :src="'./assets/image/2025101704_right.png'" alt="" class="i-img-right">
+                <LazyImage :src="'./assets/image/2025101704_left.png'" alt="" className="i-img-left"></LazyImage>
+                <LazyImage :src="'./assets/image/2025101704_right.png'" alt="" className="i-img-right"></LazyImage>
             </div>
         </div>
     </div>
@@ -156,7 +156,7 @@
     font-weight: 300;
 }
 
-img {
+:deep(img) {
     width: 100%;
 }
 
@@ -213,7 +213,7 @@ img {
         margin-bottom: 20px;
     }
 
-    .b img {
+    .b :deep(img) {
         width: 60%;
         margin: 0 auto;
         display: block;
@@ -283,16 +283,25 @@ img {
     .i-imgs {
         gap: 20px;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 
-    .i-img-left {
-        width: 100px;
-        height: auto;
+    .i-imgs :deep(.lazy-image-wrapper) {
+        width: auto;
+        display: inline-block;
     }
 
-    .i-img-right {
-        width: 150px;
-        height: auto;
+    :deep(.i-img-left) {
+        width: 120px !important;
+        height: auto !important;
+        max-width: 120px;
+    }
+
+    :deep(.i-img-right) {
+        width: 180px !important;
+        height: auto !important;
+        max-width: 180px;
     }
 }
 </style>
