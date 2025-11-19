@@ -1,0 +1,1 @@
+import{_ as o}from"./index-ClfAc5V4.js";import{f as r,o as s,h as t}from"./vendor-BTGEr8OH.js";const c={},a={class:"para"};function n(e,_){return s(),r("div",a,[t(e.$slots,"default",{},void 0,!0)])}const i=o(c,[["render",n],["__scopeId","data-v-21e4a828"]]);export{i as c};
